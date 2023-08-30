@@ -44,7 +44,7 @@ import Mathlib.Data.Polynomial.Eval
 import Mathlib.Data.Rat.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Data.Real.ENNReal
---import Mathlib.Data.Real.Irrational
+import Mathlib.Data.Real.Irrational
 import Mathlib.Data.Real.NNReal
 import Mathlib.Data.Real.Sqrt
 --import Mathlib.Data.Real.GoldenRatio

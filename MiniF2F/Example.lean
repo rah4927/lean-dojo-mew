@@ -15,6 +15,7 @@ open Nat
 
 open Topology
 
+
 theorem amc12a_2019_p21 (z : ℂ) (h₀ : z = (1 + Complex.I) / Real.sqrt 2) :
     ((∑ k : ℤ in Finset.Icc 1 12, z ^ k ^ 2) * (∑ k : ℤ in Finset.Icc 1 12, 1 / z ^ k ^ 2)) = 36 := by sorry
 #align amc12a_2019_p21 amc12a_2019_p21
@@ -755,10 +756,12 @@ theorem mathd_algebra_144 (a b c d : ℕ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 
     (h₁ : (b : ℤ) - a = d) (h₂ : a + b + c = 60) (h₃ : a + b > c) : d < 10 := by sorry
 #align mathd_algebra_144 mathd_algebra_144
 
--- theorem mathd_algebra_282 (f : ℝ → ℝ) (h₀ : ∀ x : ℝ, ¬ (Irrational x) → f x = abs (Int.floor x))
---     (h₁ : ∀ x, Irrational x → f x = (Int.ceil x) ^ 2) :
---     f (8 ^ (1 / 3)) + f (-Real.pi) + f (Real.sqrt 50) + f (9 / 2) = 79 := by sorry
--- #align mathd_algebra_282 mathd_algebra_282
+theorem mathd_algebra_282 (f : ℝ → ℝ) (h₀ : ∀ x : ℝ, ¬ (Irrational x) → f x = abs (Int.floor x))
+    (h₁ : ∀ x, Irrational x → f x = (Int.ceil x) ^ 2) :
+    f (8 ^ (1 / 3)) + f (-Real.pi) + f (Real.sqrt 50) + f (9 / 2) = 79 := by sorry
+#align mathd_algebra_282 mathd_algebra_282
+
+
 
 theorem mathd_algebra_410 (x y : ℝ) (h₀ : y = x ^ 2 - 6 * x + 13) : 4 ≤ y := by sorry
 #align mathd_algebra_410 mathd_algebra_410
